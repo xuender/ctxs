@@ -5,7 +5,7 @@ import (
 	"context"
 	"fmt"
 
-	ctxs "github.com/xuender/ctx"
+	"github.com/xuender/ctxs"
 )
 
 func ExampleCopy() {
