@@ -1,0 +1,25 @@
+[linters]
+disable = [
+  "gomoddirectives",
+	"exportloopref",
+  "gosmopolitan",
+  "depguard",
+  "ireturn",
+  "wastedassign",
+  "unused",
+  "stylecheck",
+  "tparallel",
+  "unparam",
+  "rowserrcheck",
+  "noctx",
+  "sqlclosecheck",
+  "staticcheck",
+  "gosimple",
+  "nilerr",
+  "bodyclose",
+  "contextcheck",
+  "nolintlint",
+  "wrapcheck",
+  "exhaustruct",
+]
+enable-all = true
