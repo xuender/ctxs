@@ -8,14 +8,14 @@ import (
 	"github.com/xuender/ctxs"
 )
 
-func ExampleWriter_Writer() {
+func ExampleWriter_Write() {
 	dst := &bytes.Buffer{}
 	ctx, cancel := context.WithCancel(context.Background())
 	writer := ctxs.NewWriter(ctx, dst)
 
-	fmt.Println(writer.Writer([]byte("xx")))
+	fmt.Println(writer.Write([]byte("xx")))
 	cancel()
-	fmt.Println(writer.Writer([]byte("xx")))
+	fmt.Println(writer.Write([]byte("xx")))
 
 	// Output:
 	// 2 <nil>

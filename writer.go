@@ -20,8 +20,8 @@ func NewWriter(ctx context.Context, writer io.Writer) *Writer {
 	}
 }
 
-// Writer writes data from buf, stopping if the context is canceled.
-func (r *Writer) Writer(buf []byte) (int, error) {
+// Write writes data from buf, stopping if the context is canceled.
+func (r *Writer) Write(buf []byte) (int, error) {
 	if err := r.ctx.Err(); err != nil {
 		return 0, err
 	}
